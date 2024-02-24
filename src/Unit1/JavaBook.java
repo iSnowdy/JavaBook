@@ -51,13 +51,6 @@ public class JavaBook {
         m = l ++; // Like this assign l to m, then add up (so 1 = m -> l++)
         n = ++ l; // However like this we give priority to the addition. Therefore it is l ++, n = l
         System.out.println("The results are: " + l + ", " + m + ", " + n);
-
-        
-        
-        
-        
-        
-        
     }
     
 }

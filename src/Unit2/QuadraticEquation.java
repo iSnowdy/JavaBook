@@ -16,7 +16,6 @@ public class QuadraticEquation {
         String out;
         
         while (!exit) {
-            
             double d, x1, x2;
             
             System.out.println("We will now do a quadratic equation\n"
