@@ -1,5 +1,5 @@
 
-package javabook;
+package Unit1;
 
 import java.util.Scanner;
 import java.util.Locale;
