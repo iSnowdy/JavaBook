@@ -7,17 +7,17 @@ public class PalindromicNumber {
     
         Scanner sc = new Scanner(System.in);
         int numberInput = 0;
-        boolean palindromicNumber = true;
-        
-        System.out.println("Tell me a number and I will tell you if it is a"
-                + "palindromic number or not");
-        
-        System.out.println("Warning: The number must be >= 10");
         
         do {
-            numberInput = sc.nextInt();
+            System.out.println("Tell me a number and I will tell you if it is a"
+                + "palindromic number or not");
         
-            if (isPalindrome(numberInput)) {
+            System.out.println("Warning: The number must be >= 10");
+            numberInput = sc.nextInt();
+        }
+        while (numberInput < 10); // Error control version better than with while
+        
+        if (isPalindrome(numberInput) == numberInput) {
                 System.out.println("Yes. Your number " + numberInput + " is a palindromic"
                         + " number");
             } else { 
@@ -26,10 +26,6 @@ public class PalindromicNumber {
                 System.out.println("The palindromic number of yours is "
                         + isPalindrome(numberInput));
             }
-        }
-        while (numberInput < 10); // Error control version better than with while
-        int numberInputPalindromic = numberInput;
-        
     }
     
     public static int isPalindrome(int number) {
