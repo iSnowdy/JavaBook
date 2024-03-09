@@ -36,7 +36,7 @@ public class Age {
         ages = Arrays.copyOf(ages, sizeControl);
         
         for (int i = 0; i < ages.length - 1; i ++) {
-            for (int j = 0; j < ages.length - i - 1; j ++){
+            for (int j = 0; j < ages.length - i - 1; j ++) {
                 if (ages[j] > ages[j + 1]) {
                     int temp = ages[j];
                     ages[j] = ages[j + 1];
